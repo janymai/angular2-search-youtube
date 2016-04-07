@@ -1,0 +1,23 @@
+import {Component} from 'angular2/core';
+import {FORM_DIRECTIVES} from 'angular2/common';
+
+
+@Component({
+  selector: 'search-youtube',
+  directives: [...FORM_DIRECTIVES],
+  pipes: [],
+  template: require('./search-youtube.html'),
+  styles: [require('./search-youtube.scss')]
+})
+
+export class SearchYoutube {
+
+  constructor() {
+    // Do stuff
+  }
+
+  ngOnInit() {
+    console.log('Hello Home');
+  }
+
+}

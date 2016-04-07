@@ -9,7 +9,6 @@ import {Component, OnInit} from 'angular2/core';
   pipes: []
 })
 export class About implements OnInit {
-
   constructor() {
     // Do stuff
   }
