@@ -17,6 +17,7 @@ if (process.env.ENV === 'build') {
  */
 import {App} from './app/app';
 
+import { youTubeServiceInjectables } from './app/components/search-youtube/search-youtube';
 /*
  * Bootstrap our Angular app with a top level component `App` and inject
  * our Services and Providers into Angular's dependency injection
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function main() {
   return bootstrap(App, [
     // These are dependencies of our App
     ...HTTP_PROVIDERS,
+    youTubeServiceInjectables,
     ...ROUTER_PROVIDERS,
     ...ENV_PROVIDERS,
     provide(LocationStrategy, {useClass: HashLocationStrategy}) // use #/ routes, remove this for HTML5 mode
